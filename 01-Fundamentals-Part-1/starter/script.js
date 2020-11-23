@@ -1,8 +1,31 @@
-let js = "amazing";
+// Coding Challenge #1
 
-let data = (40 + 20 + 30) / 2;
-console.log(data)
+let markWeight = 78;
+let johnWeight = 92;
 
-let name = "Pavel";
-let PI = 3.14159;
-console.log(name)
+let markHeight = 1.69;
+let johnHeight = 1.95;
+
+let markBMI = markWeight / markHeight ** 2;
+let johnBMI = johnWeight / johnHeight ** 2;
+
+
+console.log(markBMI, johnBMI);
+
+// Coding Challenge #2
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})`);
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})`);
+}
+
+// 
+const firstName = "Pavel";
+const job = "student"
+const birth = 1993;
+const year = 2020;
+
+const infoPavel = `I'm ${firstName}, a ${year - birth} years old ${job}!`;
+console.log(infoPavel);
+
