@@ -14,3 +14,22 @@ function checkWinner(avgKoalas, avgDolphins) {
     }
 }
 checkWinner(avgKoalas, avgDoplhins);
+
+// Coding Challenge #2
+
+const bills = [125, 555, 44];
+
+const calcTip = function (value) {
+    if (value >= 300 || value <= 50) {
+        return value * 0.2;
+    } else {
+        return value * 0.15;
+    }
+}
+
+const tips = [];
+bills.forEach(function (e) {
+    tips.push(calcTip(e));
+});
+
+console.log(tips);
