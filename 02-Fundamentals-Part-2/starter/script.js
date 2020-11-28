@@ -33,3 +33,32 @@ bills.forEach(function (e) {
 });
 
 console.log(tips);
+
+// Coding Challenge #3
+const mark = {
+    firstName: 'Mark',
+    secondName: 'Miller',
+    height: 1.69,
+    mass: 78,
+    calcBMI: function () {
+        return this.BMI = this.mass / (this.height ** 2);
+    }
+};
+const john = {
+    firstName: 'John',
+    secondName: 'Smith',
+    height: 1.95,
+    mass: 92,
+    calcBMI: function () {
+        return this.BMI = this.mass / (this.height ** 2);
+    }
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+if (mark.BMI > john.BMI) {
+    console.log(`${mark.firstName + mark.secondName}'s BMI ${mark.BMI} is higher than${john.firstName + john.secondName}'s BMI ${john.BMI} .`)
+} else {
+    console.log(`${john.firstName + john.secondName}'s BMI ${john.BMI} is higher than${mark.firstName + mark.secondName}'s BMI ${mark.BMI} .`)
+}
